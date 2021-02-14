@@ -4,5 +4,5 @@ const publicId = "35636a0ad5dfa58a94d43c49bc47f871",
 
 
   fetch(`${baseURL}cards/5f19b419eb76d924865b38ee/?key=${publicId}&token=${token}`)
-    .then(response => console.log(response.json()))
+    .then(response => console.log(response.text()))
     .catch(e => console.log(e));
